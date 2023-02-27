@@ -62,7 +62,7 @@ const Live = () => {
             <p className="mb-5 text-white">
               This is the hangout stream featuring Panda, PurpleZheep, Co-Hosts
               YMFTS2BB and ChewieBell. You can watch us live on this platform
-              (and re-runs when we're not live) at pandashangout.com/streams. We
+              (and re-runs when we're not live) at pandashangout.com/live. We
               hope you enjoy the shows, and if you do, we hope you'll share them
               with others.
             </p>
