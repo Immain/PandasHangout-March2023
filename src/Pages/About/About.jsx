@@ -74,11 +74,13 @@ const About = () => {
               Our Story
             </h2>
             <p className="mt-4 text-white">
-              Panda's Hangout was created by a group of friends (Panda, Chewie,
-              YMFTS2BB, and PurpleZheep) so that we could have everything in one
-              place. This website is a work in progress but will eventually
-              include the ability to chat with friends during live streams and
-              so much more.
+              A group of friends (Panda, Chewie, YMFTS2BB, and PurpleZheep) came
+              together to create a place where we could hang out and have fun.
+              We wanted to create a place where we could chat with each other,
+              play games, and watch movies together. We also wanted to create a
+              place where we could share our content with each other and the
+              world. We hope you enjoy our website and we look forward to seeing
+              you in our Discord server.
             </p>
           </div>
 
