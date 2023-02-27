@@ -40,7 +40,7 @@ const Servers = () => {
               Ark Survival Evolved
             </h2>
             <p className="text-white text-center">
-              If a dog chews shoes whose shoes does he choose?
+              Live the ultimate survival fantasy with ARK: Survival Evolved on our dedicated server!
             </p>
             <Link to="/servers/ark">
               <div className="card-actions justify-end">
@@ -65,7 +65,7 @@ const Servers = () => {
               Minecraft
             </h2>
             <p className="text-white text-center">
-              If a dog chews shoes whose shoes does he choose?
+              Come join us on our Minecraft server! We have a variety of plugins to make your experience more enjoyable!
             </p>
             <Link to="/servers/minecraft">
               <div className="card-actions justify-end">
