@@ -7,6 +7,9 @@ import PHGaming from "../../assets/PHGaming.png";
 import { TiHeartOutline, TiHeart } from "react-icons/ti";
 import { RxShare2 } from "react-icons/rx";
 import { GiTwoCoins } from "react-icons/gi";
+import words from "../../Pages/Live/swearwords.json";
+
+let swear = words;
 
 const Live = () => {
   const [title, setTitle] = useState("Share");
@@ -26,6 +29,16 @@ const Live = () => {
   };
 
   const sendMessage = () => {
+    if (document.getElementById("name").value === "") {
+      alert("Please enter a Twitter or Discord handle!");
+    } else {
+      for (let i = 0; i < swear.length; i++) {
+        if (document.getElementById("name").value.includes(swear[i])) {
+          alert("Please don't swear!");
+          return;
+        }
+      }
+    }
     const request = new XMLHttpRequest();
     request.open(
       "POST",
