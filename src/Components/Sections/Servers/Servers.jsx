@@ -10,7 +10,7 @@ const Servers = () => {
         autoPlay
         loop
         muted
-        className="w-full h-full object-cover absolute -z-10 brightness-50"
+        className="lg:w-full lg:h-full object-cover absolute -z-10 brightness-50 xxs:w-[200px]"
       />
       <h1 className="text-4xl font-extrabold text-center text-green-400 uppercase mx-auto p-3">
         Game Servers
