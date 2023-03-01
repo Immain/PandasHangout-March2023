@@ -100,27 +100,29 @@ const Craft = () => {
         </div>
       </section>
 
-      {/* MC Map */}
+      {/* Grid Map */}
       <section className="mx-auto bg-slate-800">
         <div className="px-6 py-8 mx-auto max-w-[1240px]">
-          <div className="grid grid-cols-2 gap-6 mt-6 xxs:grid-cols-1 lg:grid-cols-2 items-center space-x-2">
+          <div className="grid grid-cols-2 gap-6 mt-6 xxs:grid-cols-1 lg:grid-cols-1 items-center space-x-2">
 
             {/* MC Map */}
-            <div>
-              <iframe className="rounded-2xl lg:w-[600px] lg:h-[400px] xxs:w-[375px] xxs:h-[300px] lg:mx-auto xxs:mx-auto"
+            <div className="p-2">
+              <div>
+              <iframe className="rounded-2xl lg:w-[700px] lg:h-[400px] xxs:w-[325px] xxs:h-[300px] ipad:w-[600px] md:w-[500px] mx-auto lg:mx-auto xxs:mx-auto"
                 src="https://map.pandashangout.com/"
               >
                 <p>Your browser does not support iframes.</p>
               </iframe>
-              <p className="text-center text-sm mt-2 text-gray-500">Live Player Map</p>
+              </div>
             </div>
 
             {/* MC Information */}
-            <div className="">
-              <h2 className="text-3xl text-left text-green-400 uppercase font-extrabold xxs:text-center lg:text-left">
+            <div className="mx-auto">
+              <div className="">
+              <h2 className="text-3xl text-green-400 uppercase font-extrabold xxs:text-center lg:text-center">
                 Minecraft Server Information
               </h2>
-              <div className="space-x-2 xxs:text-center lg:text-left">
+              <div className="space-x-2 xxs:text-center lg:text-center">
               <div className="badge badge-accent badge-outline mt-2">1.18.2 Spigot</div>
               <div className="badge badge-accent badge-outline mt-2">Towny</div>
               <div className="badge badge-accent badge-outline mt-2">Survival</div>
@@ -128,8 +130,9 @@ const Craft = () => {
               <p className="max-w-2xl mx-auto mt-4 text-left text-white xxs:text-center lg:text-left">
               Hangout SMP is a super chill Minecraft Survival server with quality of life plugins to make your experience better. You can play with your friends, make land claims, create towns, make player warps and so much more! We also have plenty of QoL (quality of life) custom items.
               </p>
-              <div className="xxs:text-center lg:text-left">
+              <div className="xxs:text-center lg:text-left items-center flex justify-center">
               <button className="btn bg-green-400 text-black hover:bg-green-600 mt-4">playmc.pandashangout.com</button>
+              </div>
               </div>
             </div>
           </div>
