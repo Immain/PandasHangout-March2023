@@ -75,7 +75,7 @@ const Live = () => {
             <p className="mb-5 text-white">
               This is the hangout stream featuring Panda, PurpleZheep, Co-Hosts
               YMFTS2BB and ChewieBell. You can watch us live on this platform
-              (and re-runs when we're not live) at pandashangout.com/live. We
+              (and re-runs when we're not live) at pandashangout.com/streams. We
               hope you enjoy the shows, and if you do, we hope you'll share them
               with others.
             </p>
@@ -175,7 +175,7 @@ const Live = () => {
         <div className="divider max-w-[1240px] mx-auto"></div>
         <div className="w-full bg-neutral py-16 px-4">
           {/* Movie Club */}
-          <div className="max-w-[1240px] grid md:grid-cols-2 mx-auto">
+          <div className="max-w-[1240px] grid md:grid-cols-1 mx-auto ipad-air:grid-cols-1 lg:grid-cols-2 ipad:grid-cols-1">
             <img
               className="mx-auto my-4 rounded-2xl"
               src="https://inola.okpls.org/wp-content/uploads/2021/08/movie.jpg"
@@ -199,7 +199,7 @@ const Live = () => {
           </div>
 
           {/* Nerd Cow */}
-          <div className="max-w-[1240px] grid md:grid-cols-2 mx-auto">
+          <div className="max-w-[1240px] grid md:grid-cols-1 mx-auto ipad-air:grid-cols-1 lg:grid-cols-2 ipad:grid-cols-1">
             <img className="mx-auto my-4 rounded-2xl" src={NerdCow} alt="/" />
 
             <div className="flex flex-col p-5 justify-center">
@@ -217,7 +217,7 @@ const Live = () => {
           </div>
 
           {/* Pandas Hangout Gaming */}
-          <div className="max-w-[1240px] grid md:grid-cols-2 mx-auto">
+          <div className="max-w-[1240px] grid md:grid-cols-1 mx-auto ipad-air:grid-cols-1 lg:grid-cols-2 ipad:grid-cols-1">
             <img className="mx-auto my-4 rounded-2xl" src={PHGaming} alt="/" />
 
             <div className="flex flex-col p-5 justify-center">
