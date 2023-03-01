@@ -78,7 +78,7 @@ const Ark = () => {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold text-green-400 ">
+            <h1 className="mb-5 text-5xl font-bold text-green-400">
               Ark Survival Evolved
             </h1>
             <p className="mb-5 text-white">
@@ -476,7 +476,7 @@ const Ark = () => {
           {/* The Island */}
           <div className="px-2 p-6">
             <img
-              className="rounded-2xl w-[575px] shadow-lg shadow-red-500/75"
+              className="rounded-2xl w-[575px] shadow-lg shadow-red-500/75 ipad:mx-auto ipad-air:mx-auto md:mx-auto"
               src="https://steamuserimages-a.akamaihd.net/ugc/109607797356173184/1039C19EE7307EE087FB3B73C4495E407CCB9365/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
               alt="The Island"
             />
@@ -504,7 +504,7 @@ const Ark = () => {
           {/* Aberration */}
           <div className="px-2 p-6">
             <img
-              className="rounded-2xl w-[575px] shadow-lg shadow-indigo-700/75"
+              className="rounded-2xl w-[575px] shadow-lg shadow-indigo-700/75 ipad:mx-auto ipad-air:mx-auto md:mx-auto"
               src="https://steamuserimages-a.akamaihd.net/ugc/848221720756130459/67A7617A1F7291928746D4C4556EAD9294BB7411/?imw=1024&imh=580&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
               alt="The Island"
             />
@@ -535,7 +535,7 @@ const Ark = () => {
           {/* Fjordur */}
           <div className="px-2 p-6">
             <img
-              className="rounded-2xl w-[575px] shadow-lg shadow-yellow-500/75"
+              className="rounded-2xl w-[575px] shadow-lg shadow-yellow-500/75 ipad:mx-auto ipad-air:mx-auto md:mx-auto"
               src="https://p9x5c4m9.rocketcdn.me/wp-content/uploads/2022/05/fj.jpg"
               alt="The Island"
             />
@@ -562,13 +562,13 @@ const Ark = () => {
           {/* Ragnarok */}
           <div className="px-2 p-6">
             <img
-              className="rounded-2xl w-[575px] shadow-lg shadow-orange-600/75"
+              className="rounded-2xl w-[575px] shadow-lg shadow-orange-600/75 ipad:mx-auto ipad-air:mx-auto md:mx-auto"
               src="https://i.ytimg.com/vi/NfaOogXlG3g/maxresdefault.jpg"
               alt="The Island"
             />
           </div>
           <div className="px-6 py-8 mx-auto max-w-[1240px] space-y-4">
-            <h2 className="text-3xl text-left text-green-400 uppercase font-extrabold xxs:text-center lg:text-left">
+            <h2 className="text-3xl text-left text-green-400 uppercase font-extrabold xxs:text-center lg:text-left ">
               Ragnarok
             </h2>
             <p className="max-w-2xl mx-auto mt-4 text-left text-white xxs:text-center lg:text-left">
