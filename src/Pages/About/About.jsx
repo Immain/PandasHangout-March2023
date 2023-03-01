@@ -85,13 +85,13 @@ const About = () => {
           </div>
 
           {/* Team */}
-          <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2 xxs:grid-cols-1">
+          <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-1 xxs:grid-cols-1 ipad:grid-cols-1 lg:grid-cols-2">
             {/* Panda */}
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
               <img
                 src={KingPanda}
                 alt="Panda"
-                className="lg:w-[200px] lg:rounded-lg xxs:rounded-none xxs:rounded-l-lg"
+                className="lg:w-[200px] lg:rounded-lg xxs:rounded-none xxs:rounded-l-lg ipad:w-[200px] md:w-[200px]"
               />
               <div className="p-5">
                 <h3 className="mb-3 text-2xl font-bold text-green-400">
@@ -151,7 +151,7 @@ const About = () => {
               <img
                 src={ChewieBell}
                 alt="ChewieBell"
-                className="lg:w-[200px] lg:rounded-lg xxs:rounded-none xxs:rounded-l-lg"
+                className="lg:w-[200px] lg:rounded-lg xxs:rounded-none xxs:rounded-l-lg ipad:w-[200px] md:w-[200px]"
               />
               <div className="p-5">
                 <h3 className="mb-3 text-2xl font-bold text-green-400">
@@ -198,7 +198,7 @@ const About = () => {
               <img
                 src={YMFTS2BB}
                 alt="YMFTS2BB"
-                className="lg:w-[200px] lg:rounded-lg xxs:rounded-none xxs:rounded-l-lg"
+                className="lg:w-[200px] lg:rounded-lg xxs:rounded-none xxs:rounded-l-lg ipad:w-[200px] md:w-[200px]"
               />
               <div className="p-5">
                 <h3 className="mb-3 text-2xl font-bold text-green-400">
@@ -231,7 +231,7 @@ const About = () => {
               <img
                 src={PurpleSheep}
                 alt="PurpleSheep"
-                className="lg:w-[200px] lg:rounded-lg xxs:rounded-none xxs:rounded-l-lg"
+                className="lg:w-[200px] lg:rounded-lg xxs:rounded-none xxs:rounded-l-lg ipad:w-[200px] md:w-[200px]"
               />
               <div className="p-5">
                 <h3 className="mb-3 text-2xl font-bold text-green-400">
@@ -386,7 +386,7 @@ const About = () => {
             </div>
             */}
           </div>
-          
+
           {/* Stats End*/}
         </div>
       </section>
