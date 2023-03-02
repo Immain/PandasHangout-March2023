@@ -146,14 +146,6 @@ const Footer = () => {
           in California
         </p>
         <div>
-          <p className="text-sm text-green-300 inline-flex">
-            <span className="pt-1 px-1">
-              <GiMountains />
-            </span>
-            A High Sierra Software Company
-          </p>
-        </div>
-        <div>
           <p className="text-sm text-gray-700 inline-flex select-none">
             Build Number: 1.0.3.180625392{" "}
           </p>
