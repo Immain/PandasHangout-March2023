@@ -5,5 +5,17 @@ A group of friends came together to create a place where we could hang out and h
 - Daisy UI: https://daisyui.com/
 - React-Player: https://www.npmjs.com/package/react-player
 - Tailwind CSS: https://tailwindcss.com/
+- React-Icons: https://react-icons.github.io/react-icons/
 
+# Back-End:
+- Firebase: https://firebase.google.com/
+
+# API's
+- BattleMetrics: https://www.battlemetrics.com/
+- Last.FM: https://www.last.fm/
+- Discord: https://discord.com/developers/docs/intro
+
+# Front-End
+- Vercel: https://vercel.com/
+- Vite: https://vitejs.dev/
 
