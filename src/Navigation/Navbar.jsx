@@ -43,7 +43,7 @@ const Navbar = () => {
                   About
                 </NavLink>
               </li>
-              <li tabIndex={0}>
+              <li tabIndex={0} className="z-10">
                 <a>
                   Servers
                   <svg
