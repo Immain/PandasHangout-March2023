@@ -18,12 +18,12 @@ const MainHero = () => {
               new friends.
             </p>
             <div>
-            <a href="https://discord.gg/AADtzrDMNa">
-            <button className="btn text-black bg-green-400 hover:bg-green-600">
-              <RiDiscordFill size={30} className="mx-1" />
-              Join Our Discord
-            </button>
-            </a>
+              <a href="https://discord.gg/AADtzrDMNa">
+                <button className="btn text-black bg-green-400 hover:bg-green-600">
+                  <RiDiscordFill size={30} className="mx-1" />
+                  Join Our Discord
+                </button>
+              </a>
             </div>
           </div>
         </div>

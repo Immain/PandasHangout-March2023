@@ -7,6 +7,8 @@ import ChewieBell from "../../assets/ChewieBell.png";
 import PurpleSheep from "../../assets/PurpleSheep.png";
 import YMFTS2BB from "../../assets/YMFTS2BB.png";
 
+const { VITE_DISCORD_GUILDID } = import.meta.env;
+
 const About = () => {
   const [ping, setPing] = useState("Healthy");
   useEffect(() => {
@@ -26,7 +28,7 @@ const About = () => {
   const [discordMembers, setDiscordMembers] = useState("...Loading");
 
   useEffect(() => {
-    fetch("https://discord.com/api/guilds/518285311495897094/widget.json")
+    fetch(`https://discord.com/api/guilds/${VITE_DISCORD_GUILDID}/widget.json`)
       .then((res) => res.json())
       .then((data) => {
         setDiscordMembers(data.presence_count);
@@ -298,32 +300,7 @@ const About = () => {
               <div className="stat-desc text-gray-500">Site Status</div>
             </div>
 
-            {/* Stat Two
-            <div className="stat bg-neutral rounded-2xl">
-              <div className="stat-figure text-primary">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  className="inline-block w-8 h-8 stroke-current"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div className="stat-title text-white">Total Likes</div>
-              <div className="stat-value text-primary">30</div>
-              <div className="stat-desc text-gray-500">
-                Total All Time Likes{" "}
-              </div>
-            </div>
-            */}
-
-            {/* Stat Three*/}
+            {/* Stat Two*/}
             <div className="stat bg-neutral rounded-2xl">
               <div className="stat-figure text-sky-600">
                 <svg
@@ -362,29 +339,6 @@ const About = () => {
                 Current Online Members
               </div>
             </div>
-
-            {/* Stat Four
-            <div className="stat bg-neutral rounded-2xl">
-              <div className="stat-figure text-">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  className="inline-block w-8 h-8 stroke-current"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div className="stat-title text-white">Page Views</div>
-              <div className="stat-value text-stone-400">234</div>
-              <div className="stat-desc text-gray-500">Combined Page Views</div>
-            </div>
-            */}
           </div>
 
           {/* Stats End*/}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Player from "../../Components/Modules/Player/Player";
 import Footer from "../../Navigation/Footer";
 import Navbar from "../../Navigation/Navbar";
@@ -8,6 +8,15 @@ import { TiHeartOutline, TiHeart } from "react-icons/ti";
 import { RxShare2 } from "react-icons/rx";
 import { GiTwoCoins } from "react-icons/gi";
 import words from "../../Pages/Live/swearwords.json";
+import { SiSpotify } from "react-icons/si";
+
+const {
+  VITE_DISCORD_CLIENT_ID,
+  VITE_DISCORD_KEY,
+  VITE_LASTFM_KEY,
+  VITE_LASTFM_USER,
+  VITE_PAYPAL
+} = import.meta.env;
 
 let swear = words;
 
@@ -42,7 +51,7 @@ const Live = () => {
     const request = new XMLHttpRequest();
     request.open(
       "POST",
-      "https://discord.com/api/webhooks/1078134793683873793/qlfF9VKpvLo1vD-U8nqp4PlFR4piB7wNER7U1iZxpUJYJMSJWFd9Fq8CQH5Vw1dby21k"
+      `https://discord.com/api/webhooks/${VITE_DISCORD_CLIENT_ID}/${VITE_DISCORD_KEY}`
     );
 
     request.setRequestHeader("Content-type", "application/json");
@@ -55,6 +64,27 @@ const Live = () => {
 
     request.send(JSON.stringify(params));
   };
+
+  const [getSongTrack, setSongTrack] = useState("...Loading");
+  const [getSongArtist, setSongArtist] = useState("...Loading");
+  const [getSongAlbum, setSongAlbum] = useState("...Loading");
+  const [getAlbumInfo, setAlbumInfo] = useState("...Loading");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      fetch(
+        `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${VITE_LASTFM_USER}&api_key=${VITE_LASTFM_KEY}&format=json`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          setSongTrack(data.recenttracks.track[0].name);
+          setSongArtist(data.recenttracks.track[0].artist["#text"]);
+          setSongAlbum(data.recenttracks.track[0].image[2]["#text"]);
+          setAlbumInfo(data.recenttracks.track[0].album["#text"]);
+        });
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div>
@@ -154,6 +184,37 @@ const Live = () => {
             <RxShare2 className="inline-flex mx-1" size={20} />
             {title}
           </button>
+        </div>
+
+        {/* Spotify Widget */}
+        <div className="flex justify-center">
+          <div className="mt-5 space-y-2">
+            <h1 className="text-white font-bold text-center">
+              Now Playing on Panda's Hangout:
+            </h1>
+            <div className="max-w-[350px] bg-spotify bg-cover shadow-md shadow-black rounded-2xl border border-green-400">
+              <div className="grid grid-cols-2 text-center items-center">
+                <div className="flex flex-col text-left pr-5">
+                  <img
+                    src={getSongAlbum}
+                    alt="album-cover"
+                    className="w-36 rounded-2xl"
+                  />
+                </div>
+                <div>
+                  <h1 className="text-white text-xl">{getSongTrack}</h1>
+                  <h1 className="text-white text-sm truncate">
+                    {getAlbumInfo}
+                  </h1>
+                  <h1 className="text-green-400 text-sm">{getSongArtist}</h1>
+                </div>
+              </div>
+              {/* Spotify Icon */}
+              <div className="relative">
+                <SiSpotify className="text-green-400 text-md absolute bottom-0 right-0 mr-2 mb-2" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Footer from "../../../Navigation/Footer";
 import Navbar from "../../../Navigation/Navbar";
 
+const {VITE_ARK_RAGNAROK, VITE_ARK_FJORDUR, VITE_ARK_ABERRATION, VITE_ARK_ISLAND} = import.meta.env;
+
 const Ark = () => {
   /* Fjordur */
   const [players, setPlayers] = useState("...Loading");
@@ -10,7 +12,7 @@ const Ark = () => {
   const [status, setStatus] = useState("...Loading");
 
   useEffect(() => {
-    fetch("https://api.battlemetrics.com/servers/18727980")
+    fetch(`https://api.battlemetrics.com/servers/${VITE_ARK_FJORDUR}`)
       .then((res) => res.json())
       .then((data) => {
         setPlayers(data.data.attributes.players);
@@ -25,7 +27,7 @@ const Ark = () => {
   const [statusR, setStatusR] = useState("...Loading");
 
   useEffect(() => {
-    fetch("https://api.battlemetrics.com/servers/18728057")
+    fetch(`https://api.battlemetrics.com/servers/${VITE_ARK_RAGNAROK}`)
       .then((res) => res.json())
       .then((data) => {
         setPlayersR(data.data.attributes.players);
@@ -40,7 +42,7 @@ const Ark = () => {
   const [statusA, setStatusA] = useState("...Loading");
 
   useEffect(() => {
-    fetch("https://api.battlemetrics.com/servers/18727981")
+    fetch(`https://api.battlemetrics.com/servers/${VITE_ARK_ABERRATION}`)
       .then((res) => res.json())
       .then((data) => {
         setPlayersA(data.data.attributes.players);
@@ -55,7 +57,7 @@ const Ark = () => {
   const [statusI, setStatusI] = useState("...Loading");
 
   useEffect(() => {
-    fetch("https://api.battlemetrics.com/servers/18727991")
+    fetch(`https://api.battlemetrics.com/servers/${VITE_ARK_ISLAND}`)
       .then((res) => res.json())
       .then((data) => {
         setPlayersI(data.data.attributes.players);

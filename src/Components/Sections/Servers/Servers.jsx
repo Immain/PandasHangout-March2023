@@ -40,7 +40,8 @@ const Servers = () => {
               Ark Survival Evolved
             </h2>
             <p className="text-white text-center">
-              Live the ultimate survival fantasy with ARK: Survival Evolved on our dedicated server!
+              Live the ultimate survival fantasy with ARK: Survival Evolved on
+              our dedicated server!
             </p>
             <Link to="/servers/ark">
               <div className="card-actions justify-end">
@@ -65,7 +66,8 @@ const Servers = () => {
               Minecraft
             </h2>
             <p className="text-white text-center">
-              Come join us on our Minecraft server! We have a variety of plugins to make your experience more enjoyable!
+              Come join us on our Minecraft server! We have a variety of plugins
+              to make your experience more enjoyable!
             </p>
             <Link to="/servers/minecraft">
               <div className="card-actions justify-end">

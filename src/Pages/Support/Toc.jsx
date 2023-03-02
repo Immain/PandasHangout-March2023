@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../Navigation/Navbar";
 import Footer from "../../Navigation/Footer";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Toc = () => {
   return (
@@ -15,8 +15,8 @@ const Toc = () => {
         <p className="font-bold">Welcome to Panda's Hangout!</p>
 
         <p>
-          These terms of service outline the rules and regulations for the
-          use of High Sierra Software's Website, located at pandashangout.com.
+          These terms of service outline the rules and regulations for the use
+          of High Sierra Software's Website, located at pandashangout.com.
         </p>
 
         <p>
@@ -26,10 +26,10 @@ const Toc = () => {
         </p>
 
         <p>
-          The following terminology applies to these terms of service,
-          Privacy Statement and Disclaimer Notice and all Agreements: "Client",
-          "You" and "Your" refers to you, the person logged into this website
-          and compliant to the Company’s terms of service. "The Company",
+          The following terminology applies to these terms of service, Privacy
+          Statement and Disclaimer Notice and all Agreements: "Client", "You"
+          and "Your" refers to you, the person logged into this website and
+          compliant to the Company’s terms of service. "The Company",
           "Ourselves", "We", "Our" and "Us", refers to our Company. "Party",
           "Parties", or "Us", refers to both the Client and ourselves. All terms
           refer to the offer, acceptance and consideration of payment necessary

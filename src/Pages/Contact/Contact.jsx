@@ -55,11 +55,11 @@ const Contact = () => {
                     Contact us on Discord for any questions or suggestions.
                   </p>
                   <div>
-                  <a href="https://discord.gg/AADtzrDMNa">
-                  <button className="btn bg-green-400 hover:bg-green-600 text-black">
-                    Let's Go
-                  </button>
-                  </a>
+                    <a href="https://discord.gg/AADtzrDMNa">
+                      <button className="btn bg-green-400 hover:bg-green-600 text-black">
+                        Let's Go
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -73,11 +73,11 @@ const Contact = () => {
                     Contact us on YouTube for any questions or suggestions.
                   </p>
                   <div>
-                  <a href="https://www.youtube.com/@pandashangout"> 
-                  <button className="btn bg-green-400 hover:bg-green-600 text-black">
-                    Let's Go
-                  </button>
-                  </a>
+                    <a href="https://www.youtube.com/@pandashangout">
+                      <button className="btn bg-green-400 hover:bg-green-600 text-black">
+                        Let's Go
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -91,11 +91,11 @@ const Contact = () => {
                     Contact us on Twitter for any questions or suggestions.
                   </p>
                   <div>
-                  <a href="https://twitter.com/PndasHangout">
-                  <button className="btn bg-green-400 hover:bg-green-600 text-black">
-                    Let's Go
-                  </button>
-                  </a>
+                    <a href="https://twitter.com/PndasHangout">
+                      <button className="btn bg-green-400 hover:bg-green-600 text-black">
+                        Let's Go
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>

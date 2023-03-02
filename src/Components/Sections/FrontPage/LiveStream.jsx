@@ -22,7 +22,8 @@ const LiveStream = () => {
               All this is included when you're a member of Panda's Hangout.
             </p>
             <p className="mb-4 text-white xxs:text-center lg:text-left">
-                Come join us for our next live stream! We have a lot of fun and we'd love to have you there!
+              Come join us for our next live stream! We have a lot of fun and
+              we'd love to have you there!
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8 ">

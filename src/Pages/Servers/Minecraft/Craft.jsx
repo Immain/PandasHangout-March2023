@@ -1,7 +1,9 @@
 import React from "react";
-import {useState , useEffect} from "react";
+import { useState, useEffect } from "react";
 import Footer from "../../../Navigation/Footer";
 import Navbar from "../../../Navigation/Navbar";
+
+const { VITE_MINECRAFT } = import.meta.env;
 
 const Craft = () => {
   const [status, setStatus] = useState("...Loading");
@@ -9,7 +11,7 @@ const Craft = () => {
   const [maxplayers, setMaxPlayers] = useState("...Loading");
 
   useEffect(() => {
-    fetch("https://api.battlemetrics.com/servers/19013388")
+    fetch(`https://api.battlemetrics.com/servers/${VITE_MINECRAFT}`)
       .then((res) => res.json())
       .then((data) => {
         setStatus(data.data.attributes.status);
@@ -18,9 +20,6 @@ const Craft = () => {
       });
   }, []);
 
-
-
-  
   return (
     <div>
       <Navbar />
@@ -85,9 +84,12 @@ const Craft = () => {
               <div className="stat-title text-white">
                 Minecraft | playmc.pandasahangout.com
               </div>
-              <div className="stat-value">{(status === "online") ? (<span className="text-green-400">online</span>) : (<span className="text-red-500">
-                Offline
-                </span>)}
+              <div className="stat-value">
+                {status === "online" ? (
+                  <span className="text-green-400">online</span>
+                ) : (
+                  <span className="text-red-500">Offline</span>
+                )}
               </div>
               <div className="stat-desc text-white">
                 Players Online: <span>{players}</span>/<span>{maxplayers}</span>
@@ -104,35 +106,47 @@ const Craft = () => {
       <section className="mx-auto bg-slate-800">
         <div className="px-6 py-8 mx-auto max-w-[1240px]">
           <div className="grid grid-cols-2 gap-6 mt-6 xxs:grid-cols-1 lg:grid-cols-1 items-center space-x-2">
-
             {/* MC Map */}
             <div className="p-2">
               <div>
-              <iframe className="rounded-2xl lg:w-[700px] lg:h-[400px] xxs:w-[325px] xxs:h-[300px] ipad:w-[600px] md:w-[500px] mx-auto lg:mx-auto xxs:mx-auto"
-                src="https://map.pandashangout.com/"
-              >
-                <p>Your browser does not support iframes.</p>
-              </iframe>
+                <iframe
+                  className="rounded-2xl lg:w-[700px] lg:h-[400px] xxs:w-[325px] xxs:h-[300px] ipad:w-[600px] md:w-[500px] mx-auto lg:mx-auto xxs:mx-auto"
+                  src="https://map.pandashangout.com/"
+                >
+                  <p>Your browser does not support iframes.</p>
+                </iframe>
               </div>
             </div>
 
             {/* MC Information */}
             <div className="mx-auto">
               <div className="">
-              <h2 className="text-3xl text-green-400 uppercase font-extrabold xxs:text-center lg:text-center">
-                Minecraft Server Information
-              </h2>
-              <div className="space-x-2 xxs:text-center lg:text-center">
-              <div className="badge badge-accent badge-outline mt-2">1.18.2 Spigot</div>
-              <div className="badge badge-accent badge-outline mt-2">Towny</div>
-              <div className="badge badge-accent badge-outline mt-2">Survival</div>
-              </div>
-              <p className="max-w-2xl mx-auto mt-4 text-left text-white xxs:text-center lg:text-left">
-              Hangout SMP is a super chill Minecraft Survival server with quality of life plugins to make your experience better. You can play with your friends, make land claims, create towns, make player warps and so much more! We also have plenty of QoL (quality of life) custom items.
-              </p>
-              <div className="xxs:text-center lg:text-left items-center flex justify-center">
-              <button className="btn bg-green-400 text-black hover:bg-green-600 mt-4">playmc.pandashangout.com</button>
-              </div>
+                <h2 className="text-3xl text-green-400 uppercase font-extrabold xxs:text-center lg:text-center">
+                  Minecraft Server Information
+                </h2>
+                <div className="space-x-2 xxs:text-center lg:text-center">
+                  <div className="badge badge-accent badge-outline mt-2">
+                    1.18.2 Spigot
+                  </div>
+                  <div className="badge badge-accent badge-outline mt-2">
+                    Towny
+                  </div>
+                  <div className="badge badge-accent badge-outline mt-2">
+                    Survival
+                  </div>
+                </div>
+                <p className="max-w-2xl mx-auto mt-4 text-left text-white xxs:text-center lg:text-left">
+                  Hangout SMP is a super chill Minecraft Survival server with
+                  quality of life plugins to make your experience better. You
+                  can play with your friends, make land claims, create towns,
+                  make player warps and so much more! We also have plenty of QoL
+                  (quality of life) custom items.
+                </p>
+                <div className="xxs:text-center lg:text-left items-center flex justify-center">
+                  <button className="btn bg-green-400 text-black hover:bg-green-600 mt-4">
+                    playmc.pandashangout.com
+                  </button>
+                </div>
               </div>
             </div>
           </div>

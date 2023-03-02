@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Newsletter = () => {
   return (
@@ -9,7 +9,8 @@ const Newsletter = () => {
             Want to stay up to date?
           </h2>
           <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-white xxs:text-center lg:text-left">
-            Subscribe to our newsletter and we'll keep you up to date with the latest movie nights, game nights, streams and events.
+            Subscribe to our newsletter and we'll keep you up to date with the
+            latest movie nights, game nights, streams and events.
           </p>
           <form action="#">
             <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">

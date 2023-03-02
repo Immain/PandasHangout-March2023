@@ -10,7 +10,9 @@ module.exports = {
         'xxxs': '280px',
         'xxs': '320px',
         'xs': '480px',
-        'sm': '640px', 
+        'sm': '640px',
+        'ipad-air': '820px',
+        'ipad': '810px',
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
@@ -23,6 +25,7 @@ module.exports = {
       backgroundImage: {
         'hero': "url('https://64.media.tumblr.com/d21a6d2309d9270b833bebeb1afaec21/tumblr_o0y9vuCxn11rldv4go1_1280.gifv')",
         '404': "url('https://cdn.wallpapersafari.com/10/63/9enofj.jpg')",
+        'spotify': "url('https://cdn.wallpapersafari.com/66/8/4WwQzK.jpg')",
       },
     },
   },

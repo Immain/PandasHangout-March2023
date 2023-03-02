@@ -16,9 +16,9 @@ const Navbar = () => {
       <div className="navbar max-w-[1240px] mx-auto">
         <div className="flex-1">
           <Link to="/">
-          <h1 className="btn btn-ghost normal-case text-2xl font-bold text-green-400">
-            Panda's Hangout
-          </h1>
+            <h1 className="btn btn-ghost normal-case text-2xl font-bold text-green-400">
+              Panda's Hangout
+            </h1>
           </Link>
         </div>
         <div className="flex-none">
@@ -126,14 +126,14 @@ const Navbar = () => {
                 </li>
               </Link>
               <Link to="/servers/ark">
-              <li className="p-4 border-b border-gray-600 hover:bg-green-400 hover:text-black">
-                <a>Ark</a>
-              </li>
+                <li className="p-4 border-b border-gray-600 hover:bg-green-400 hover:text-black">
+                  <a>Ark</a>
+                </li>
               </Link>
               <Link to="/servers/minecraft">
-              <li className="p-4 border-b border-gray-600 hover:bg-green-400 hover:text-black">
-                <a>Minecraft</a>
-              </li>
+                <li className="p-4 border-b border-gray-600 hover:bg-green-400 hover:text-black">
+                  <a>Minecraft</a>
+                </li>
               </Link>
               <Link to="/Live">
                 <li className="p-4 border-b border-gray-600 hover:bg-green-400 hover:text-black">
@@ -141,9 +141,9 @@ const Navbar = () => {
                 </li>
               </Link>
               <Link to="/Contact">
-              <li className="p-4 border-b border-gray-600 hover:bg-green-400 hover:text-black">
-                <a>Contact</a>
-              </li>
+                <li className="p-4 border-b border-gray-600 hover:bg-green-400 hover:text-black">
+                  <a>Contact</a>
+                </li>
               </Link>
             </ul>
           </nav>
