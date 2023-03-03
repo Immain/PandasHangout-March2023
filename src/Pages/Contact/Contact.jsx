@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../Navigation/Footer";
 import Navbar from "../../Navigation/Navbar";
+import SafePlace from "../../assets/SafePlace.png";
 import { SiDiscord, SiYoutube, SiTwitter } from "react-icons/si";
 
 const Contact = () => {
@@ -117,6 +118,7 @@ const Contact = () => {
                   </button>
                 </a>
               </div>
+              <img className="mx-auto p-10" src={SafePlace} alt="Safe Place" />
             </div>
           </div>
         </div>
