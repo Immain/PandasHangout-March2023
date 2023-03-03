@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import "./Player.css";
+import StreamLive from "../../../Assets/StreamLive.png";
 
 const Player = ({ url }) => {
   return (
@@ -12,12 +13,10 @@ const Player = ({ url }) => {
         height="100%"
         controls={true}
         playing={true}
-        light="https://i.etsystatic.com/34466454/r/il/ce3153/3798316597/il_fullxfull.3798316597_d0sl.jpg"
+        light={StreamLive}
       />
     </div>
   );
 };
 
 export default Player;
-
-/* https://i.imgur.com/n7hYjrG.png */
