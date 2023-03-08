@@ -397,7 +397,7 @@ const Ark = () => {
             <div className="text-white space-y-2">
               <p>Max Player Level: 350</p>
               <p>Max Wild Dino Level: 1050</p>
-              <p>Max Tamed Dino Level: 350</p>
+              <p>Max Tamed Dino Level: 2322</p>
               <p>Gathering: 25x</p>
               <p>XP: 25x</p>
               <p>Taming: 25x</p>
