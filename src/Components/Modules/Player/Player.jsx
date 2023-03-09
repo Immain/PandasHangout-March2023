@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import "./Player.css";
-import StreamLive from "../../../Assets/StreamLive.png";
+import StreamLive from "../../../assets/StreamLive.png";
 
 const Player = ({ url }) => {
   return (
