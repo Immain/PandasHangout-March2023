@@ -15,11 +15,11 @@ const Servers = () => {
       <h1 className="text-4xl font-extrabold text-center text-green-400 uppercase mx-auto p-3">
         Game Servers
       </h1>
-      <h1 className="text-3xl lg:text-white xxs:text-black dark:text-white mb-4 tracking-tight font-extrabold text-center">
+      <h1 className="text-3xl lg:text-white xxs:text-black xxs:dark:text-white dark:text-white mb-4 tracking-tight font-extrabold text-center">
         {" "}
         Get access to the latest and greatest games on our servers!
       </h1>
-      <p className="text-center lg:text-white xxs:text-black dark:text-white text-xl mx-auto tracking-tight max-w-[700px] p-3">
+      <p className="text-center lg:text-white xxs:text-black xxs:dark:text-white dark:text-white text-xl mx-auto tracking-tight max-w-[700px] p-3">
         We host a variety of game servers for you to play on. We host Minecraft,
         Ark Survival Evolved, and more! To get more information or just looking
         to hang out with us, join our Discord!
