@@ -36,10 +36,10 @@ const Servers = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl font-bold text-white mx-auto">
+            <h2 className="card-title text-2xl font-bold dark:text-white text-black mx-auto">
               Ark Survival Evolved
             </h2>
-            <p className="text-white text-center">
+            <p className="dark:text-white text-black text-center">
               Live the ultimate survival fantasy with ARK: Survival Evolved on
               our dedicated server!
             </p>
@@ -62,10 +62,10 @@ const Servers = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl font-bold text-white mx-auto">
+            <h2 className="card-title text-2xl font-bold dark:text-white text-black mx-auto">
               Minecraft
             </h2>
-            <p className="text-white text-center">
+            <p className="dark:text-white text-black text-center">
               Come join us on our Minecraft server! We have a variety of plugins
               to make your experience more enjoyable!
             </p>

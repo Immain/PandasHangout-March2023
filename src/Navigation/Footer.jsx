@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="mx-auto px-4 py-16 bg-white text-black dark:text-white text-center dark:bg-neutral border-t border-green-400">
       <div className="max-w-[1240px] mx-auto px-4 grid grid-cols-2 lg:grid-cols-5 gap-y-4">
         <div className="col-span-2 lg:col-span-1">
-          <h3 className="font-bold text-xl text-green-300">PANDA'S HANGOUT</h3>
+          <h3 className="font-bold text-xl text-green-400">PANDA'S HANGOUT</h3>
           <p className="pt-2">
             Hello! My name is Panda and I broadcast a variety of games on Twitch
             and here on this platform. While visiting, you can enjoy friendly

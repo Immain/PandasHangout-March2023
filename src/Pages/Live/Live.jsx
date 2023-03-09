@@ -114,7 +114,7 @@ const Live = () => {
       </div>
 
       {/* Content */}
-      <section className="text-gray-600 bg-neutral py-16">
+      <section className="text-gray-600 dark:bg-neutral py-16">
         {/* Stream Player */}
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-1 md:text-sm px-2 lg:space-x-3 md:space-x-3 md:items-center lg:items-center space-y-2">
           <div className="shadow-md shadow-green-500 rounded-2xl">
@@ -129,7 +129,7 @@ const Live = () => {
             <h3 className="font-bold text-lg text-green-400">
               Hey, You're Awesome!
             </h3>
-            <p className="py-4 text-white">
+            <p className="py-4 text-black dark:text-white">
               Thank you for liking our stream! We really appreciate it, please
               leave us your Twitter or Discord handle so we can say thanks!
             </p>
@@ -219,26 +219,26 @@ const Live = () => {
       </section>
 
       {/* Events */}
-      <section className="text-gray-600 bg-neutral py-16">
+      <section className="dark:bg-neutral py-16">
         <div className="divider max-w-[1240px] mx-auto"></div>
         <div className="flex flex-col justify-center gap-2">
           <h1 className="text-center text-xl font-bold text-green-400">
             Welcome To Our Live Events
           </h1>
-          <h1 className="text-center text-4xl font-bold text-white">
+          <h1 className="text-center text-4xl font-bold text-black dark:text-white">
             See What's Available To You in 2023!
           </h1>
-          <p className="text-center text-white">
+          <p className="text-center text-black dark:text-white">
             We have a lot of events planned for 2023, and we're excited to share
             them with you!
           </p>
         </div>
         <div className="divider max-w-[1240px] mx-auto"></div>
-        <div className="w-full bg-neutral py-16 px-4">
+        <div className="w-full dark:bg-neutral py-16 px-4">
           {/* Movie Club */}
           <div className="max-w-[1240px] grid md:grid-cols-1 mx-auto ipad-air:grid-cols-1 lg:grid-cols-2 ipad:grid-cols-1">
             <img
-              className="mx-auto my-4 rounded-2xl"
+              className="mx-auto my-4 rounded-2xl border-4 border-slate-800 dark:border-none"
               src="https://inola.okpls.org/wp-content/uploads/2021/08/movie.jpg"
               alt="/"
             />
@@ -247,7 +247,7 @@ const Live = () => {
               <h1 className="md:text-4xl sm:text-3xl text-2xl text-center font-bold py-2 text-[#00df9a]">
                 Movie Club
               </h1>
-              <p className="text-white">
+              <p className="text-black dark:text-white">
                 Join us every 3rd Saturday for Movie Club here at Panda's
                 Hangout. We hang out and talk about what we liked and disliked
                 about the movie afterwards. After each movie we vote on which
@@ -261,13 +261,13 @@ const Live = () => {
 
           {/* Nerd Cow */}
           <div className="max-w-[1240px] grid md:grid-cols-1 mx-auto ipad-air:grid-cols-1 lg:grid-cols-2 ipad:grid-cols-1">
-            <img className="mx-auto my-4 rounded-2xl" src={NerdCow} alt="/" />
+            <img className="mx-auto my-4 rounded-2xl border-4 border-slate-800 dark:border-none" src={NerdCow} alt="/" />
 
             <div className="flex flex-col p-5 justify-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl text-center font-bold py-2 text-[#00df9a]">
                 Nerd Cow Webcast
               </h1>
-              <p className="text-white">
+              <p className="text-black dark:text-white">
                 The Nerd Cow Webcast is a new up and coming online show where
                 the crew of Panda's Hangout talks about anything nerdy. This
                 ranges from anything about programming, movies, sci-fi material,
@@ -279,13 +279,12 @@ const Live = () => {
 
           {/* Pandas Hangout Gaming */}
           <div className="max-w-[1240px] grid md:grid-cols-1 mx-auto ipad-air:grid-cols-1 lg:grid-cols-2 ipad:grid-cols-1">
-            <img className="mx-auto my-4 rounded-2xl" src={PHGaming} alt="/" />
-
+            <img className="mx-auto my-4 rounded-2xl border-4 border-slate-800 dark:border-none" src={PHGaming} alt="/" />
             <div className="flex flex-col p-5 justify-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl text-center font-bold py-2 text-[#00df9a]">
                 Gaming Streams
               </h1>
-              <p className="text-white">
+              <p className="text-black dark:text-white">
                 Welcome to King Panda's Game Stream, a channel full of
                 interactive content and positivity, KP is dedicated to streaming
                 high-quality and fun content and interacting with our amazing

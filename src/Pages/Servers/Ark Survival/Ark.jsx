@@ -117,12 +117,12 @@ const Ark = () => {
       </div>
 
       {/* Server Status */}
-      <section className="mx-auto bg-neutral">
+      <section className="mx-auto dark:bg-neutral">
         <div className="px-6 py-8 mx-auto max-w-[1240px]">
           <h2 className="text-3xl text-center text-green-400 uppercase font-extrabold">
             Server Status
           </h2>
-          <p className="max-w-2xl mx-auto mt-4 text-center text-white">
+          <p className="max-w-2xl mx-auto mt-4 text-center dark:text-white text-black">
             If you are having issues connecting, please check the status of the
             servers below.
           </p>
@@ -130,7 +130,7 @@ const Ark = () => {
           {/* Stats Grid */}
           <div className="grid lg:grid-cols-4 xxs:grid-cols-1 gap-6 mt-8 mx-auto">
             {/* Fjordur Stat*/}
-            <div className="stat bg-gray-800 rounded-2xl">
+            <div className="stat dark:bg-gray-800 border-2 border-black dark:border-none rounded-2xl">
               <div className="stat-figure text-">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +146,7 @@ const Ark = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="stat-title text-white">
+              <div className="stat-title text-black dark:text-white">
                 Ark Survival | Fjordur
               </div>
               <div className="stat-value">
@@ -156,10 +156,10 @@ const Ark = () => {
                   <span className="text-red-500">Offline</span>
                 )}
               </div>
-              <div className="stat-desc text-white">
+              <div className="stat-desc text-black dark:text-white">
                 Players Online: <span>{players}</span>/50
               </div>
-              <div className="stat-desc text-white">
+              <div className="stat-desc text-black dark:text-white">
                 Country: <span>{country}</span>
               </div>
               <div className="stat-desc text-gray-500">
@@ -168,7 +168,7 @@ const Ark = () => {
             </div>
 
             {/* Ragnarok Stat*/}
-            <div className="stat bg-gray-800 rounded-2xl">
+            <div className="stat dark:bg-gray-800 rounded-2xl border-2 border-black dark:border-none">
               <div className="stat-figure text-">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +184,7 @@ const Ark = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="stat-title text-white">
+              <div className="stat-title text-black dark:text-white">
                 Ark Survival | Ragnarok
               </div>
               <div className="stat-value">
@@ -194,10 +194,10 @@ const Ark = () => {
                   <span className="text-red-500">Offline</span>
                 )}
               </div>
-              <div className="stat-desc text-white">
+              <div className="stat-desc text-black dark:text-white">
                 Players Online: <span>{playersR}</span>/50
               </div>
-              <div className="stat-desc text-white">
+              <div className="stat-desc text-black dark:text-white">
                 Country: <span>{countryR}</span>
               </div>
               <div className="stat-desc text-gray-500">
@@ -206,7 +206,7 @@ const Ark = () => {
             </div>
 
             {/* Aberration Stat*/}
-            <div className="stat bg-gray-800 rounded-2xl">
+            <div className="stat dark:bg-gray-800 rounded-2xl border-2 border-black dark:border-none">
               <div className="stat-figure text-">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +222,7 @@ const Ark = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="stat-title text-white">
+              <div className="stat-title text-black dark:text-white">
                 Ark Survival | Aberration
               </div>
               <div className="stat-value">
@@ -232,10 +232,10 @@ const Ark = () => {
                   <span className="text-red-500">Offline</span>
                 )}
               </div>
-              <div className="stat-desc text-white">
+              <div className="stat-desc text-black dark:text-white">
                 Players Online: <span>{playersA}</span>/50
               </div>
-              <div className="stat-desc text-white">
+              <div className="stat-desc text-black dark:text-white">
                 Country: <span>{countryA}</span>
               </div>
               <div className="stat-desc text-gray-500">
@@ -244,7 +244,7 @@ const Ark = () => {
             </div>
 
             {/* The Island Stat*/}
-            <div className="stat bg-gray-800 rounded-2xl">
+            <div className="stat dark:bg-gray-800 rounded-2xl border-2 border-black dark:border-none">
               <div className="stat-figure text-">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@ const Ark = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="stat-title text-white">
+              <div className="stat-title text-black dark:text-white">
                 Ark Survival | The Island
               </div>
               <div className="stat-value">
@@ -270,10 +270,10 @@ const Ark = () => {
                   <span className="text-red-500">Offline</span>
                 )}
               </div>
-              <div className="stat-desc text-white">
+              <div className="stat-desc text-black dark:text-white">
                 Players Online: <span>{playersI}</span>/50
               </div>
-              <div className="stat-desc text-white">
+              <div className="stat-desc text-black dark:text-white">
                 Country: <span>{countryI}</span>
               </div>
               <div className="stat-desc text-gray-500">
@@ -287,12 +287,12 @@ const Ark = () => {
       </section>
 
       {/* Server Information */}
-      <section className="mx-auto bg-slate-800 p-4">
+      <section className="mx-auto dark:bg-slate-800 p-4">
         <div className="px-6 py-8 mx-auto max-w-[1240px]">
           <h2 className="text-3xl text-center text-green-400 uppercase font-extrabold">
             Server Information
           </h2>
-          <p className="max-w-2xl mx-auto mt-4 text-center text-white">
+          <p className="max-w-2xl mx-auto mt-4 text-center dark:text-white text-black">
             Available Clustered game maps and information about the server.
           </p>
         </div>
@@ -307,7 +307,7 @@ const Ark = () => {
 
             {/* All Server Rules */}
             <div className="">
-              <p className="py-4 text-white">
+              <p className="py-4 dark:text-white text-black">
                 The general operation of these rules is more ‘spirit of the law’
                 mindset rather than a ‘letter of the law’ mindset, and as such
                 are purposely loose. The absence of an item in these rules does
@@ -316,42 +316,42 @@ const Ark = () => {
                 upon. Please use common sense and err on the side of caution.
               </p>
               <div className="divider"></div>
-              <p className="py-4 text-white">
+              <p className="py-4 dark:text-white text-black">
                 1. No harassment or personal attacks upon other players either
                 in the game or on discord. (This includes things such as
                 handcuffing a player for a significant amount of time,
                 spawn-camping, repeatedly raiding someone in a short period of
                 time, or steamrolling defenseless tribes.)
               </p>
-              <p className="py-4 text-white">
+              <p className="py-4 dark:text-white text-black">
                 2. No excessive raiding. (This includes things such as raiding
                 someone's base multiple times in a short period of time, raiding
                 someone's base with a significantly larger tribe, or raiding
                 someone's base with a significantly larger tribe multiple times
                 in a short period of time.)
               </p>
-              <p className="py-4 text-white">
+              <p className="py-4 dark:text-white text-black">
                 3. ABSOLUTELY no racism, sexism, or hate speech either on the
                 server or on the Discord. This extends to Discord and in-game
                 names/aliases as well. (this includes things such as using
                 racial slurs, sexist slurs, making fun of anyone who identifies
                 as LGBTQ+, or making fun of anyone who has a disability.)
               </p>
-              <p className="py-4 text-white">
+              <p className="py-4 dark:text-white text-black">
                 4. No excessive griefing. (This includes things such as
                 repeatedly greifing a player's dinos, base, or unlocked
                 inventory, to gain an unfair advantage.)
               </p>
-              <p className="py-4 text-white">
+              <p className="py-4 dark:text-white text-black">
                 5. No excessive trolling. (This includes things such as
                 repeatedly trolling a player, or trolling a player multiple
                 times in a short period of time.)
               </p>
-              <p className="py-4 text-white">
+              <p className="py-4 dark:text-white text-black">
                 6. No blocking or impeding access to loot crate or artifact
                 spawns.
               </p>
-              <p className="py-4 text-white">
+              <p className="py-4 dark:text-white text-black">
                 7. Any player who has not been active on the server for 90 days
                 will be removed from the server. (This includes things such as
                 dinos, structures, and items.)
@@ -389,15 +389,15 @@ const Ark = () => {
             <div className="divider"></div>
             {/* Main Settings */}
             <div>
-              <p className="py-4 text-white border-l-2 pl-2 border-red-500 font-bold">
+              <p className="py-4 dark:text-white text-black border-l-2 pl-2 border-red-500 font-bold">
                 Main Settings
               </p>
             </div>
             <div className="divider"></div>
-            <div className="text-white space-y-2">
+            <div className="dark:text-white text-black space-y-2">
               <p>Max Player Level: 350</p>
               <p>Max Wild Dino Level: 1050</p>
-              <p>Max Tamed Dino Level: 2322</p>
+              <p>Max Tamed Dino Level: 350</p>
               <p>Gathering: 25x</p>
               <p>XP: 25x</p>
               <p>Taming: 25x</p>
@@ -425,11 +425,11 @@ const Ark = () => {
             {/* End of Main Settings */}
             <div className="divider"></div>
             {/* Per Level Stat Multipliers */}
-            <p className="py-4 text-white border-l-2 pl-2 border-red-500 font-bold">
+            <p className="py-4 dark:text-white text-black border-l-2 pl-2 border-red-500 font-bold">
               Per Level Stat Multipliers
             </p>
             <div className="divider"></div>
-            <div className="text-white space-y-2">
+            <div className="dark:text-white text-black space-y-2">
               <p>Player Weight: 3x</p>
               <p>Crafting Speed: 2x</p>
               <p>Tamed Dino Weight: 2.5x</p>
@@ -487,7 +487,7 @@ const Ark = () => {
             <h2 className="text-3xl text-left text-green-400 uppercase font-extrabold xxs:text-center lg:text-left">
               The Island
             </h2>
-            <p className="max-w-2xl mx-auto mt-4 text-left text-white xxs:text-center lg:text-left">
+            <p className="max-w-2xl mx-auto mt-4 text-left dark:text-white text-black xxs:text-center lg:text-left">
               The Island is a large landmass with several smaller islands
               surrounding the central island. Resources become more common as
               one travels farther inland, but so do the dangers. Some areas are
@@ -515,7 +515,7 @@ const Ark = () => {
             <h2 className="text-3xl text-left text-green-400 uppercase font-extrabold xxs:text-center lg:text-left">
               Aberration
             </h2>
-            <p className="max-w-2xl mx-auto mt-4 text-left text-white xxs:text-center lg:text-left">
+            <p className="max-w-2xl mx-auto mt-4 text-left dark:text-white text-black xxs:text-center lg:text-left">
               The intense radiation of Aberration has led to incredible genetic
               mutations, resulting in new creatures with amazing abilities!
               Among others, clamber up walls & glide through the air on the back
@@ -546,7 +546,7 @@ const Ark = () => {
             <h2 className="text-3xl text-left text-green-400 uppercase font-extrabold xxs:text-center lg:text-left">
               Fjordur
             </h2>
-            <p className="max-w-2xl mx-auto mt-4 text-left text-white xxs:text-center lg:text-left">
+            <p className="max-w-2xl mx-auto mt-4 text-left dark:text-white text-black xxs:text-center lg:text-left">
               Explore a cold and hostile Norse-inspired archipelago in ARK's
               newest official community map, featuring four new creatures for
               you to collect! Fjordur contains over 140 square kilometers of new
@@ -573,7 +573,7 @@ const Ark = () => {
             <h2 className="text-3xl text-left text-green-400 uppercase font-extrabold xxs:text-center lg:text-left ">
               Ragnarok
             </h2>
-            <p className="max-w-2xl mx-auto mt-4 text-left text-white xxs:text-center lg:text-left">
+            <p className="max-w-2xl mx-auto mt-4 text-left dark:text-white text-black xxs:text-center lg:text-left">
               Journey through an expansive 144 sq. kilometer environment where
               elements from The Island, Scorched Earth, and all new biomes are
               combined to bring the ultimate survivor experience. Whether

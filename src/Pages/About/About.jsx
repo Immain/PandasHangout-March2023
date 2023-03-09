@@ -67,7 +67,7 @@ const About = () => {
       </div>
 
       {/* Staff Content */}
-      <section className="bg-neutral">
+      <section className="dakr:bg-neutral">
         {/* About */}
         <div className="py-8 px-4 mx-auto max-w-[1240px] lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
@@ -75,7 +75,7 @@ const About = () => {
               {" "}
               Our Story
             </h2>
-            <p className="mt-4 text-white">
+            <p className="mt-4 dark:text-white text-black">
               A group of friends (Panda, Chewie, YMFTS2BB, and PurpleZheep) came
               together to create a place where we could hang out and have fun.
               We wanted to create a place where we could chat with each other,
@@ -89,7 +89,7 @@ const About = () => {
           {/* Team */}
           <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-1 xxs:grid-cols-1 ipad:grid-cols-1 lg:grid-cols-2">
             {/* Panda */}
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            <div className="items-center bg-gray-50 rounded-lg shadow-xl border-2 border-slate-500 dark:shadow-none sm:flex dark:bg-gray-800 dark:border-gray-700">
               <img
                 src={KingPanda}
                 alt="Panda"
@@ -99,10 +99,10 @@ const About = () => {
                 <h3 className="mb-3 text-2xl font-bold text-green-400">
                   King Panda
                 </h3>
-                <span className="text-white">
+                <span className="dark:text-white text-black">
                   Founder & Full Stack Developer
                 </span>
-                <p className="mt-4 text-white">
+                <p className="mt-4 dark:text-white text-black">
                   Panda is the founder of Panda's Hangout and is an IRL Full
                   Stack Developer. Panda also loves hanging out with his friends
                   and family, surfing, photography, and playing video games.
@@ -115,7 +115,7 @@ const About = () => {
                   >
                     <li>
                       <SiSteam
-                        className="hover:text-slate-200 cursor-pointer bg-gray-500 rounded-full px-1 text-black"
+                        className="dark:hover:text-slate-200 hover:text-sky-800 cursor-pointer dark:bg-gray-500 rounded-full px-1 text-black"
                         size={25}
                       />
                     </li>
@@ -127,7 +127,7 @@ const About = () => {
                   >
                     <li>
                       <SiTwitch
-                        className="hover:text-indigo-700  cursor-pointer bg-gray-500 rounded-full px-1 text-black"
+                        className="hover:text-indigo-700  cursor-pointer dark:bg-gray-500 rounded-full px-1 text-black"
                         size={25}
                       />
                     </li>
@@ -139,7 +139,7 @@ const About = () => {
                   >
                     <li>
                       <SiYoutube
-                        className="hover:text-red-500 cursor-pointer bg-gray-500 rounded-full px-1 text-black"
+                        className="hover:text-red-500 cursor-pointer dark:bg-gray-500 rounded-full px-1 text-black"
                         size={25}
                       />
                     </li>
@@ -149,7 +149,7 @@ const About = () => {
             </div>
 
             {/* ChewieBell */}
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            <div className="items-center bg-gray-50 rounded-lg shadow-xl border-2 border-slate-500 dark:shadow-none sm:flex dark:bg-gray-800 dark:border-gray-700">
               <img
                 src={ChewieBell}
                 alt="ChewieBell"
@@ -159,8 +159,8 @@ const About = () => {
                 <h3 className="mb-3 text-2xl font-bold text-green-400">
                   ChewieBell
                 </h3>
-                <span className="text-white">Co-Founder</span>
-                <p className="mt-4 text-white">
+                <span className="dark:text-white text-black">Co-Founder</span>
+                <p className="mt-4 dark:text-white text-black">
                   ChewieBell is the co-founder of Panda's Hangout and is a
                   part-time streamer over on Twitch. ChewieBell also loves
                   hanging out with his friends and family, watching movies, and
@@ -174,7 +174,7 @@ const About = () => {
                   >
                     <li>
                       <SiSteam
-                        className="hover:text-slate-200 cursor-pointer bg-gray-500 rounded-full px-1 text-black"
+                        className="dark:hover:text-slate-200 hover:text-sky-800 cursor-pointer dark:bg-gray-500 rounded-full px-1 text-black"
                         size={25}
                       />
                     </li>
@@ -186,7 +186,7 @@ const About = () => {
                   >
                     <li>
                       <SiTwitch
-                        className="hover:text-indigo-700 cursor-pointer bg-gray-500 rounded-full px-1 text-black"
+                        className="hover:text-indigo-700 cursor-pointer dark:bg-gray-500 rounded-full px-1 text-black"
                         size={25}
                       />
                     </li>
@@ -196,7 +196,7 @@ const About = () => {
             </div>
 
             {/* YMFTS2BB */}
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            <div className="items-center bg-gray-50 rounded-lg shadow-xl border-2 border-slate-500 dark:shadow-none sm:flex dark:bg-gray-800 dark:border-gray-700">
               <img
                 src={YMFTS2BB}
                 alt="YMFTS2BB"
@@ -206,8 +206,8 @@ const About = () => {
                 <h3 className="mb-3 text-2xl font-bold text-green-400">
                   YMFTS2BB
                 </h3>
-                <span className="text-white">Developer</span>
-                <p className="mt-4 text-white">
+                <span className="dark:text-white text-black">Developer</span>
+                <p className="mt-4 dark:text-white text-black">
                   YMFTS2BB is a developer at Panda's Hangout and when he's not
                   working on cars, he's helping us work on the website.
                 </p>
@@ -219,7 +219,7 @@ const About = () => {
                   >
                     <li>
                       <SiSteam
-                        className="hover:text-slate-200 cursor-pointer bg-gray-500 rounded-full px-1 text-black"
+                        className="dark:hover:text-slate-200 hover:text-sky-800 cursor-pointer dark:bg-gray-500 rounded-full px-1 text-black"
                         size={25}
                       />
                     </li>
@@ -229,7 +229,7 @@ const About = () => {
             </div>
 
             {/* PurpleZheep */}
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            <div className="items-center bg-gray-50 rounded-lg shadow-xl border-2 border-slate-500 dark:shadow-none sm:flex dark:bg-gray-800 dark:border-gray-700">
               <img
                 src={PurpleSheep}
                 alt="PurpleSheep"
@@ -239,8 +239,8 @@ const About = () => {
                 <h3 className="mb-3 text-2xl font-bold text-green-400">
                   PurpleZheep
                 </h3>
-                <span className="text-white">Editor</span>
-                <p className="mt-4 text-white">
+                <span className="dark:text-white text-black">Editor</span>
+                <p className="mt-4 dark:text-white text-black">
                   PurpleZheep is the editor of Panda's Hangout and loves to play
                   video games and hang out with friends.
                 </p>
@@ -252,7 +252,7 @@ const About = () => {
                   >
                     <li>
                       <SiSteam
-                        className="hover:text-slate-200 cursor-pointer bg-gray-500 rounded-full px-1 text-black"
+                        className="dark:hover:text-slate-200 hover:text-sky-800 cursor-pointer dark:bg-gray-500 rounded-full px-1 text-black"
                         size={25}
                       />
                     </li>
@@ -270,7 +270,7 @@ const About = () => {
           <h2 className="text-3xl text-center text-green-400 uppercase font-extrabold">
             Stats That Matter
           </h2>
-          <p className="max-w-2xl mx-auto mt-4 text-center text-white">
+          <p className="max-w-2xl mx-auto mt-4 text-center dark:text-white text-black">
             We are a community of gamers, streamers, and developers. We use the
             latest technologies to create a fun and engaging experience for our
             users, and we are always looking for new ways to improve.
@@ -279,7 +279,7 @@ const About = () => {
           {/* Stats Grid */}
           <div className="grid lg:grid-cols-2 xxs:grid-cols-1 gap-6 mt-8 mx-auto">
             {/* Stat One*/}
-            <div className="stat bg-neutral rounded-2xl">
+            <div className="stat dark:bg-neutral border-2 border-black rounded-2xl shadow-xl dark:shadow-none dark:border-none">
               <div className="stat-figure text-green-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -295,14 +295,14 @@ const About = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="stat-title text-white">Pandashangout.com</div>
+              <div className="stat-title text-black dark:text-white">Pandashangout.com</div>
               <div className="stat-value text-green-400">{ping}</div>
               <div className="stat-desc text-gray-500">Site Status</div>
             </div>
 
             {/* Stat Two*/}
-            <div className="stat bg-neutral rounded-2xl">
-              <div className="stat-figure text-sky-600">
+            <div className="stat dark:bg-neutral border-2 border-black rounded-2xl dark:border-none shadow-xl dark:shadow-none">
+              <div className="stat-figure dark:text-sky-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -333,7 +333,7 @@ const About = () => {
                   />
                 </svg>
               </div>
-              <div className="stat-title text-white">Total Members</div>
+              <div className="stat-title text-black dark:text-white">Total Members</div>
               <div className="stat-value text-sky-600">{discordMembers}</div>
               <div className="stat-desc text-gray-500">
                 Current Online Members

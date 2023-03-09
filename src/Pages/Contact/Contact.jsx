@@ -35,24 +35,24 @@ const Contact = () => {
       </div>
 
       {/* Content */}
-      <section className="bg-neutral">
+      <section className="dark:bg-neutral">
         <div className="py-8 px-4 mx-auto max-w-[1240px] lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
             <h1 className="text-3xl uppercase font-extrabold text-green-400">
               Contact us on Social Media
             </h1>
-            <p className="mt-4 text-white">
+            <p className="mt-4 text-black dark:text-white">
               We are always open to your suggestions and feedback.
             </p>
 
             {/* Social Media Grid */}
             <div className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
               {/* Discord */}
-              <div className="flex flex-col items-center justify-center p-4 bg-base-200 rounded-lg shadow-lg gap-2">
+              <div className="flex flex-col items-center justify-center p-4 bg-base-200 rounded-lg shadow-lg gap-2 dark:border-none border-2 border-black">
                 <SiDiscord className="mx-auto text-green-400" size={40} />
                 <div className="mt-4 text-center space-y-5">
-                  <h3 className="text-lg font-medium text-white">Discord</h3>
-                  <p className="mt-2 text-white">
+                  <h3 className="text-lg font-medium text-black dark:text-white">Discord</h3>
+                  <p className="mt-2 text-black dark:text-white">
                     Contact us on Discord for any questions or suggestions.
                   </p>
                   <div>
@@ -66,11 +66,11 @@ const Contact = () => {
               </div>
 
               {/* YouTube */}
-              <div className="flex flex-col items-center justify-center p-4 bg-base-200 rounded-lg shadow-lg gap-2">
+              <div className="flex flex-col items-center justify-center p-4 bg-base-200 rounded-lg shadow-lg gap-2 dark:border-none border-2 border-black">
                 <SiYoutube className="mx-auto text-green-400" size={40} />
                 <div className="mt-4 text-center space-y-5">
-                  <h3 className="text-lg font-medium text-white">YouTube</h3>
-                  <p className="mt-2 text-white">
+                  <h3 className="text-lg font-medium text-black dark:text-white">YouTube</h3>
+                  <p className="mt-2 text-black dark:text-white">
                     Contact us on YouTube for any questions or suggestions.
                   </p>
                   <div>
@@ -84,11 +84,11 @@ const Contact = () => {
               </div>
 
               {/* Twitter*/}
-              <div className="flex flex-col items-center justify-center p-4 bg-base-200 rounded-lg shadow-lg gap-2">
+              <div className="flex flex-col items-center justify-center p-4 bg-base-200 rounded-lg shadow-lg gap-2 dark:border-none border-2 border-black">
                 <SiTwitter className="mx-auto text-green-400" size={40} />
                 <div className="mt-4 text-center space-y-5">
-                  <h3 className="text-lg font-medium text-white">Twitter</h3>
-                  <p className="mt-2 text-white">
+                  <h3 className="text-lg font-medium text-black dark:text-white">Twitter</h3>
+                  <p className="mt-2 text-black dark:text-white">
                     Contact us on Twitter for any questions or suggestions.
                   </p>
                   <div>
@@ -113,12 +113,11 @@ const Contact = () => {
               </h1>
               <div>
                 <a href="mailto:help@pandadatasystems.com">
-                  <button className="btn btn-outline border-green-400 text-green-400 hover:bg-green-500 hover:border-none">
+                  <button className="btn btn-outline dark:border-green-400 dark:text-green-400 border-black hover:bg-green-500 hover:border-none">
                     Send Us an Email
                   </button>
                 </a>
               </div>
-              <img className="mx-auto p-10" src={SafePlace} alt="Safe Place" />
             </div>
           </div>
         </div>

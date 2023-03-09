@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-neutral">
+    <div className="dark:bg-neutral">
       {/* Main Naviation*/}
       <div className="navbar max-w-[1240px] mx-auto">
         <div className="flex-1">
@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
         <div className="flex-none">
           <nav>
-            <ul className="hidden menu menu-horizontal px-1 md:flex">
+            <ul className="hidden menu menu-horizontal px-1 md:flex dark:text-white">
               <li>
                 <NavLink
                   to="/"

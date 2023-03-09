@@ -52,12 +52,12 @@ const Craft = () => {
       {/* Content */}
 
       {/* Server Status */}
-      <section className="mx-auto bg-neutral">
+      <section className="mx-auto dark:bg-neutral">
         <div className="px-6 py-8 mx-auto max-w-[1240px]">
           <h2 className="text-3xl text-center text-green-400 uppercase font-extrabold">
             Server Status
           </h2>
-          <p className="max-w-2xl mx-auto mt-4 text-center text-white">
+          <p className="max-w-2xl mx-auto mt-4 text-center text-black dark:text-white">
             If you are having issues connecting, please check the status of the
             servers below.
           </p>
@@ -65,7 +65,7 @@ const Craft = () => {
           {/* Server Status */}
           <div className="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-1 lg:grid-cols-1">
             {/* Minecraft Stat*/}
-            <div className="stat bg-gray-800 rounded-2xl max-w-[500px] mx-auto">
+            <div className="stat dark:bg-gray-800 border-2 border-slate-800 rounded-2xl max-w-[500px] mx-auto">
               <div className="stat-figure text-">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ const Craft = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="stat-title text-white">
+              <div className="stat-title text-black dark:text-white">
                 Minecraft | playmc.pandasahangout.com
               </div>
               <div className="stat-value">
@@ -91,7 +91,7 @@ const Craft = () => {
                   <span className="text-red-500">Offline</span>
                 )}
               </div>
-              <div className="stat-desc text-white">
+              <div className="stat-desc text-black dark:text-white">
                 Players Online: <span>{players}</span>/<span>{maxplayers}</span>
               </div>
               <div className="stat-desc text-gray-500">
@@ -103,7 +103,7 @@ const Craft = () => {
       </section>
 
       {/* Grid Map */}
-      <section className="mx-auto bg-slate-800">
+      <section className="mx-auto dark:bg-slate-800">
         <div className="px-6 py-8 mx-auto max-w-[1240px]">
           <div className="grid grid-cols-2 gap-6 mt-6 xxs:grid-cols-1 lg:grid-cols-1 items-center space-x-2">
             {/* MC Map */}
@@ -125,17 +125,17 @@ const Craft = () => {
                   Minecraft Server Information
                 </h2>
                 <div className="space-x-2 xxs:text-center lg:text-center">
-                  <div className="badge badge-accent badge-outline mt-2">
+                  <div className="badge dark:badge-accent dark:badge-outline mt-2">
                     1.18.2 Spigot
                   </div>
-                  <div className="badge badge-accent badge-outline mt-2">
+                  <div className="badge dark:badge-accent dark:badge-outline mt-2">
                     Towny
                   </div>
-                  <div className="badge badge-accent badge-outline mt-2">
+                  <div className="badge dark:badge-accent dark:badge-outline mt-2">
                     Survival
                   </div>
                 </div>
-                <p className="max-w-2xl mx-auto mt-4 text-left text-white xxs:text-center lg:text-left">
+                <p className="max-w-2xl mx-auto mt-4 text-left text-black dark:text-white xxs:text-center lg:text-left">
                   Hangout SMP is a super chill Minecraft Survival server with
                   quality of life plugins to make your experience better. You
                   can play with your friends, make land claims, create towns,
